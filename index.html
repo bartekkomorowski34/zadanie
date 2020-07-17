@@ -7,7 +7,36 @@
     <link href="index.css" rel="stylesheet" type="text/css"></link>
   </head>
   <body>
-    <h1 id="a">hello</h1>
+    <header>
+      <h1>Shop list</h1>
+    </header>
+    <form>
+      <input type="text" class="todo-input" placeholder="Type product name">
+      <input type="number" class="todo-number" value="1">
+      <select class="type-product">
+        <option value="Alcohol">Alkohol</option>
+        <option value="bread">Pieczywo</option>
+        <option value="vagetables">Warzywa</option>
+      </select>
+      <button class="todo-button" type="submit">Add</button>
+    </form>
+    <div class="todo-conteiner">
+      <div class="Alcohol">
+        <p>Alkohol</p>
+        <ul class="todo-list"></ul>
+      </div>
+      <div class="Bread">
+        <p>pieczywo</p>
+        <ul class="todo-list"></ul>
+      </div>
+      <div class="Vagetables">
+        <p>Warzywa</p>
+        <ul class="todo-list"></ul>
+      </div>
+      
+    </div>
+    
+    
     <script src="index.js" type="text/javascript"></script>
   </body>
 </html>
