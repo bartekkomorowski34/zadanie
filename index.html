@@ -5,36 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="index.css" rel="stylesheet" type="text/css"></link>
+    <script>
+      
+    </script>
   </head>
   <body>
     <header>
       <h1>Shop list</h1>
     </header>
     <form>
-      <input type="text" class="todo-input" placeholder="Type product name">
-      <input type="number" class="todo-number" value="1">
-      <select class="type-product">
-        <option value="Alcohol">Alkohol</option>
-        <option value="bread">Pieczywo</option>
-        <option value="vagetables">Warzywa</option>
+      <input type="text"  class="list-input" placeholder="Type product name">
+      <input type="number"  class="list-number" value="1">
+      <select name="todos" class="list-product">
+        <option value="vegetables">Vegetables</option>
+        <option value="fruits">Fruits</option>
+        <option value="bread">Bread</option>
       </select>
-      <button class="todo-button" type="submit">Add</button>
+        
+      <button class="list-button" type="submit">Add</button>
+      <button type="button" class="list-button" onclick="printList()">Print list</button>
     </form>
-    <div class="todo-conteiner">
-      <div class="Alcohol">
-        <p>Alkohol</p>
-        <ul class="todo-list"></ul>
-      </div>
-      <div class="Bread">
-        <p>pieczywo</p>
-        <ul class="todo-list"></ul>
-      </div>
-      <div class="Vagetables">
-        <p>Warzywa</p>
-        <ul class="todo-list"></ul>
-      </div>
-      
+    <div id="list-conteiner" class="list-conteiner" >
+        <p class="title">You'r list:</p>
+        <ul class="list"></ul>
     </div>
+    
+    
     
     
     <script src="index.js" type="text/javascript"></script>
